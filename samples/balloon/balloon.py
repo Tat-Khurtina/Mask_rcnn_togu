@@ -349,7 +349,8 @@ if __name__ == '__main__':
             utils.download_trained_weights(weights_path)
     elif args.weights.lower() == "last":
         # Find last trained weights
-        weights_path = model.find_last()[1]
+        weights_path =content/mask_rcnn/Mask_rcnn_togu/logs/balloon20190222T0600/events.out.tfevents.1550815257.01398d8e6999    
+        #weights_path = model.find_last()[1]
     elif args.weights.lower() == "imagenet":
         # Start from ImageNet trained weights
         weights_path = model.get_imagenet_weights()
